@@ -17,7 +17,7 @@ void heapify(int a[], int n, int idx) {
 }
 
 void heapSort(int a[], int n) {
-	for (int i = n - 1; i >= 0; i--)heapify(a, n, i);
+	for (int i = n / 2; i >= 0; i--)heapify(a, n, i);
 	int m = n;
 	for (int i = n - 1; i >= 0; i--) {
 		swap(a[i], a[0]);
